@@ -19,7 +19,7 @@ const Navbar = () => {
     </div>
     <div className='flex gap-2 items-center'>
       <Link href={"/login"}><button className='bg-[#f3f3f1] hover:bg-[#eff0ec] rounded-md px-6 py-5'>Log in</button></Link>
-      <Link target='_blank' href={"https://github.com/pHarsh9"} ><button className='bg-black rounded-full text-white p-5 hover:bg-[#1e2330] cursor-pointer'>GitHub</button></Link>
+      <Link target='_blank' href={"https://github.com/pHarsh9/linktree-clone"} ><button className='bg-black rounded-full text-white p-5 hover:bg-[#1e2330] cursor-pointer'>GitHub</button></Link>
     </div>
     </nav>}
     </>
