@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import { useSearchParams } from 'next/navigation';
 
@@ -63,6 +63,7 @@ const Generate = () => {
     }
   };
   return (
+    <Suspense>
     <div className='bg-[#225ac0] grid grid-cols-2'>
       <div className='flex flex-col justify-center gap-5 items-center'>
         <h1 className='font-bold text-3xl text-[#c2d816]'>Claim your Linktree</h1>
@@ -86,6 +87,7 @@ const Generate = () => {
       </div>
             <ToastContainer />
     </div>
+    </Suspense>
   )
 }
 
