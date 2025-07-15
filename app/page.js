@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter } from "next/navigation";
 
 
@@ -10,6 +10,7 @@ export default function Home() {
   }
   const [text, settext] = useState("")
   return (
+    <Suspense>
     <main>
       <section className="bg-[#254f1a] min-h-[120vh] grid grid-cols-2">
         <div className="flex flex-col justify-center gap-2 ml-[5vw]">
@@ -38,5 +39,6 @@ export default function Home() {
       <section className="bg-[#780016] min-h-[100vh]"></section>
       
     </main>
+    </Suspense>
   );
 }
