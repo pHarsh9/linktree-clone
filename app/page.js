@@ -1,13 +1,12 @@
 "use client"
-import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 
 export default function Home() {
   const router = useRouter();
-  const createTree = (params) => {
-    router.push(`/generate?handle=${text}`)
+  const createTree = () => {
+    router.push(`/Generate?handle=${text}`)
   }
   const [text, settext] = useState("")
   return (

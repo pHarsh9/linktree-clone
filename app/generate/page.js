@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import { useSearchParams } from 'next/navigation';
 
-const generate = () => {
+const Generate = () => {
   const searchParams = useSearchParams();
   const [bio,setbio]=useState("")
   const [links, setLinks] = useState([{link:"", text:""}])
@@ -82,11 +82,11 @@ const generate = () => {
         <button disabled={handle==""|| pic==""|| links[0].text==""|| links[0].link==""} onClick={()=>submitLink()} className='hover:cursor-pointer bg-[#c2d816] text-white font rounded-full p-2 disabled:bg-[#FDE68A]'>Create your Linktree</button>
       </div>
       <div className=''>
-        <img className='h-[100vh] w-[100vw] object-contain' src="generate.webp" alt="" />
+        <img className='h-[100vh] w-[100vw] object-contain' src="Generate.webp" alt="" />
       </div>
             <ToastContainer />
     </div>
   )
 }
 
-export default generate
+export default Generate

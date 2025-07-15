@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import Link from 'next/link';
-const login = () => {
+const Login = () => {
   const [logini, setlogin] = useState("");
   const [username, setUsername] = useState("")
   const handleChange = (e) => {
@@ -28,4 +28,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
