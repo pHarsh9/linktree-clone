@@ -11,9 +11,7 @@ const login = () => {
     const i = info.replace(/^@/, '');
     console.log(i)
     setUsername(i)
-
   }
-
   return (
     <div className='bg-[#225ac0] grid grid-cols-2'>
       <div className='flex flex-col justify-center gap-5 items-center'>
